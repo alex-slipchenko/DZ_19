@@ -1,0 +1,116 @@
+html,
+body {
+    font-family: serif;
+}
+
+body {
+    margin: 20px;
+}
+
+ul {
+    padding: 0;
+}
+
+.container {
+    padding: 50px;
+}
+
+p {
+    margin: 0;
+    font-weight: normal;
+}
+
+.weather li,
+p {
+    border-bottom: 1px solid rgb(128, 128, 128);
+    padding: 5px 0px 5px;
+}
+
+.weather li:last-child {
+    padding-top: 10px;
+    border-bottom: 1px solid transparent;
+}
+
+
+.weather__coutry {
+    background-image: url("http://openweathermap.org/images/flags/ua.png");
+    position: absolute;
+    top: 2px;
+    right: 5px;
+    font-size: 11px;
+    font-weight: bold;
+    color: rgb(50, 119, 168)
+}
+
+.weather {
+    position: relative;
+    padding: 0;
+    margin-top: 30px;
+    margin-left: 200px;
+    width: 124px;
+    border: 2px solid#4caf50;
+    padding: 15px 10px 10px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+
+.weather li {
+    list-style: none;
+    width: 100%;
+}
+
+.fearures__icon {
+    height: 102px;
+    /* хоть как то згладить скачки */
+
+}
+
+.fearures__icon img {
+    width: 100px;
+    height: 100px;
+}
+
+.fearures__deg img{
+    width: 120px;
+}
+
+.fearures__sel {
+    margin-top: 10px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 5px;
+    border: 1px solid #4caf50;
+    padding-left: 3px;
+}
+
+.weather__btn {
+    width: 100%;
+    padding: 10px;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    transition: all .1s ease-out;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 1px;
+    background-color: #4caf50;
+    color: #fff;
+    border-color: #4caf50;
+}
+
+
+
+.weather__btn:hover {
+    opacity: 0.85;
+    cursor: pointer;
+    transform: scale(1.025);
+}
